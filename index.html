@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4bf3ec9928.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Exchange Office</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+
+    <nav id="nav">
+        <div class="nav-bar" id="nav-bar">
+            <div class="nav-header">
+                <a href="index.html"><img src="logo.png" alt=""></a>
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <div class="links-container">
+                <ul class="links">
+                    <li><a href="index.html" class="link active" id="home">Naslovna</a></li>
+                    <li><a href="#kurs" class="link" id="kurs">Kursna lista</a></li>
+                    <li><a href="#contact" class="link" id="contact">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <ul class="social">
+                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Video -->
+
+    <div class="video">
+        <video muted="" autoplay="" loop="" class="intro">
+            <source src="intro.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Pause Video -->
+
+    <div class="pause-btn">
+        <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+    </div>
+
+    <!-- Uvod -->
+    <div class="intro-text">
+        <h2>Menjačnica Exchange</h2>
+        <h3>Promena na bolje</h3>
+        <div class="number">
+            <a href="#">+38161111111</a>
+        </div>
+        <p><i class="far fa-arrow-alt-circle-right"></i>Plaćanje čuna u menjačnicama</p>
+    </div>
+
+    <!-- Kurs -->
+
+    <div class="kurs">
+        <h3>Kurs evra</h3>
+        <h2>117.00</h2>
+        <p>Kupovni na 03.06.2020</p>
+        <p>Prodajni: <span class="prodajni">118.50</span></p>
+    </div>
+
+
+    <!-- Stats -->
+
+    <div class="stats">
+        <div class="stats-box stats-box1">
+            <h2 id="count1">60</h2>
+            <p>lokacija sirom Srbije</p>
+        </div>
+        <div class="stats-box stats-box2">
+            <h2 id="count3">10.5170</h2>
+            <p>transakcija svakog dana</p>
+        </div>
+        <div class="stats-box stats-box3">
+            <h2 id="count2">52%</h2>
+            <p>zaposlenih su žene</p>
+        </div>
+        <div class="stats-box stats-box4">
+            <h2 id="count4">106.418.564</h2>
+            <p>dinara prometa dnevno</p>
+        </div>
+    </div>
+
+    <!-- Kurs - Kalkulator -->
+
+    <div class="box3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg">
+                    <a href="">
+                        <div class="news box3-box">
+                            <div class="news-text">
+                                <p>Uskoro otvaranje</p>
+                                <h3>E-Office u Beo shopping centru</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg">
+                    <div class="kurs-lista box3-box">
+                        <h2 class="title">Kursna lista</h2>
+                        <p>Na dan <span id="date">09.06.2020.</span></p>
+                        <div class="rates-list">
+                            <div class="rates-list-row">
+                                <div class="rates-list-cell rates-column-label first">valuta</div>
+                                <div class="rates-list-cell rates-column-label">kupovni</div>
+                                <div class="rates-list-cell rates-column-label">prodajni</div>
+                            </div>
+                            <div class="rates-list-row currency-row" data-currency="EUR">
+                                <div class="rates-list-cell rates-row-label">EUR</div>
+                                <div class="rates-list-cell buy-rate">117.00</div>
+                                <div class="rates-list-cell sell-rate">118.50</div>
+                            </div>
+                            <div class="rates-list-row currency-row" data-currency="USD">
+                                <div class="rates-list-cell rates-row-label">USD</div>
+                                <div class="rates-list-cell buy-rate">101.40</div>
+                                <div class="rates-list-cell sell-rate">105.35</div>
+                            </div>
+                            <div class="rates-list-row currency-row" data-currency="CHF">
+                                <div class="rates-list-cell rates-row-label">CHF</div>
+                                <div class="rates-list-cell buy-rate">105.50</div>
+                                <div class="rates-list-cell sell-rate">109.75</div>
+                            </div>
+                            <div class="rates-list-row currency-row" data-currency="AUD">
+                                <div class="rates-list-cell rates-row-label">AUD</div>
+                                <div class="rates-list-cell buy-rate">68.65</div>
+                                <div class="rates-list-cell sell-rate">73.40</div>
+                            </div>
+                        </div>
+                        <a href="#kurs" class="kurs-lista-btn">Kompletna Lista</a>
+                    </div>
+                    
+                </div>
+                <div class="col-lg">
+                    <div class="calculator box3-box">
+                        <div class="calculator-inner col-12">
+                            <h3>Kalkulator valuta</h3>
+                            <div class="calculator-value1">
+                                <input type="number" class="form-control col-5" value="100">
+                                <select class="custom-select col-sm-4 bg-dark" id="select1">
+                                    <option value="EUR" id="eur">EUR</option>
+                                    <option value="USD" id="usd">USD</option>
+                                    <option value="RSD" id="rsd">RSD</option>
+                                  </select>
+                            </div>
+                            <div class="calculator-equal">
+                                =
+                            </div>
+                            <div class="calculator-result">
+                                <h3 class="calculator-result-value">11700</h3>
+                            </div>
+                            <div class="calculator-value2">
+                                <select class="custom-select col-sm-4 bg-dark" id="select2">
+                                    <option value="RSD">RSD</option>
+                                    <option value="USD">USD</option>
+                                    <option value="EUR">EUR</option>
+                                  </select>
+                            </div>
+                            <button class="btn col-4 convert-btn">Convert</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Isplata -->
+
+    <div class="isplata">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="isplata-provizija isplata-box">
+                        <div class="isplata-provizija-text">
+                            <h3>Menjačnica</h3>
+                            <p>I malo više od toga</p>
+                            <p>Mi u VIP-u težimo da budemo više nego obična menjačnica.
+                                Imamo misiju da budemo Vaš pouzdan partner u poslu i svakodnevnom životu.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="isplata-vip">
+                        <a href="">
+                            <div class="card isplata-box">
+                                <img class="card-img-top" src="eo4.jpg" alt="Card image cap">
+                                <div class="card-body isplata-vip-text">
+                                    <p>Transfer novca</p>
+                                    <h3>VIP Net</h3>
+                                    <p>Zadovoljstvo nam je da Vam predstavimo novu ponudu najbržeg prenosa novca za
+                                        fizička lica na
+                                        teritoriji Republike Srbije.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kursna Lista -->
+    <div class="kursna-lista" id="kurs">
+        <div class="container">
+            <div class="kursna-lista-text text-center">
+                <h1>Kursna Lista</h1>
+                <p>Na dan <span class="kursna-lista-date">09.06.2020.</span></p>
+            </div>
+            <div class="choose-date input-group flex-nowrap col-4 mx-auto">
+                <input type="date" class="form-control">
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Valuta</th>
+                        <th scope="col">Oznaka</th>
+                        <th scope="col">Kupovni</th>
+                        <th scope="col">Srednji</th>
+                        <th scope="col">Prodajni</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Evro</td>
+                        <td>EUR</td>
+                        <td>117.0000</td>
+                        <td>117.5821</td>
+                        <td>118.5000</td>
+                    </tr>
+                    <tr>
+                        <td>Američki Dolar</td>
+                        <td>USD</td>
+                        <td>102.0000</td>
+                        <td>104.1563</td>
+                        <td>105.9000</td>
+                    </tr>
+                    <tr>
+                        <td>Švajcarski Franak</td>
+                        <td>CHF</td>
+                        <td>105.3000</td>
+                        <td>108.1215</td>
+                        <td>109.6000</td>
+                    </tr>
+                    <tr>
+                        <td>Australijski Dolar</td>
+                        <td>AUD</td>
+                        <td>69.0000</td>
+                        <td>72.5368</td>
+                        <td>73.6500</td>
+                    </tr>
+                    <tr>
+                        <td>Kanadski Dolar</td>
+                        <td>CAD</td>
+                        <td>73.7000</td>
+                        <td>77.5505</td>
+                        <td>78.7500</td>
+                    </tr>
+                    <tr>
+                        <td>Hrvatska Kuna</td>
+                        <td>HRK</td>
+                        <td>14.3000</td>
+                        <td>15.5388</td>
+                        <td>15.9000</td>
+                    </tr>
+                    <tr>
+                        <td>Mađarska Forinta</td>
+                        <td>HUF</td>
+                        <td>0.3150</td>
+                        <td>0.3420</td>
+                        <td>0.3440</td>
+                    </tr>
+                    <tr>
+                        <td>Japanski Jen</td>
+                        <td>JPY</td>
+                        <td>0.8948</td>
+                        <td>0.9513</td>
+                        <td>0.9988</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Kontakt -->
+
+    <div class="contact" id="contact">
+        <h1>Kontakt</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <div class="contact-info">
+                        <p>Budite slobodni da nas kontaktirate bilo putem kontakt podataka ispod ili kontakt forme.
+                        </p>
+                        <h3>Informacije o kursu</h3>
+                        <ul>
+                            <li>+381 63 273 603</li>
+                            <li>+381 11 323 39 01</li>
+                        </ul>
+                        <h3>Prigovori, reklamacije i upiti za platni promet</h3>
+                        <p><a href="mailto:reklamacije@vipsistem.rs">reklamacije@eoffice.com</a></p>
+                        <ul>
+                            <li>+381 11 425 22 11</li>
+                            <li>+381 63 350 798</li>
+                        </ul>
+                        <h3> Kabinet</h3>
+                        <p>Dunavski kej 11, 11000 Beograd, Srbija</p>
+                        <p><a href="">office@eoffice.rs</a></p>
+                        <ul>
+                            <li>+381 11 425 22 00</li>
+                            <li>+381 11 425 22 04</li>
+                            <li>+381 11 425 22 10</li>
+                            <li>+381 62 444 402</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="formGroupExampleInput"
+                                    placeholder="Vaše ime">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="formGroupExampleInput2"
+                                    placeholder="Vaše prezime">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="formGroupExampleInput2"
+                                    placeholder="Vaš e-mail">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
+                                    placeholder="Vaša poruka"></textarea>
+                            </div>
+                            <button type="submit" class="btn mb-2 col-12">Pošalji</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="container footer">
+            <div class="footer-logo">
+                <img src="logo.png" alt="">
+            </div>
+
+            <ul class="footer-links">
+                <li><a href="#" class="link">Podaci o firmi</a></li>
+                <li><a href="#" class="link">Kontakt</a></li>
+                <li><a href="#" class="link">Prigovor</a></li>
+            </ul>
+
+            <div class="footer-logo2">
+                <img src="cert.png" alt="">
+            </div>
+        </div>
+
+        <div class="by">
+            <a href="">
+                <p>Website by: <img src="by.png" alt=""> Fluena</p>
+            </a>
+        </div>
+    </footer>
+
+    <button id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="js.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
